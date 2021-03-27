@@ -1,0 +1,54 @@
+.bg{
+    display: flex;
+    background-image: url('https://img.theweek.in/content/dam/week/news/sci-tech/2020/april/Cricket-bat-ball-shut.jpg');
+    background-size: cover;
+    min-height: 100%;
+    max-height: fit-content;
+}
+.heroes{
+    padding:20px;
+    border:2px solid black;
+}
+.heroes li{
+    text-decoration: none;
+    list-style: none;
+}
+.heroes button{
+    width:200px;
+    background-color: yellow;
+    border-radius: 20px;
+    
+}
+
+
+
+.first{
+    width:40%;
+}
+.second{
+    width:50%;
+}
+.heroe{
+    padding:20px;
+    
+}
+.heroe li{
+    list-style: none;
+    color:white;
+}
+table{
+    width:450px;
+    justify-content: space-between;
+}
+table button{
+    width:200px;
+}
+table button:hover{
+    background-color:rgb(206, 26, 26);
+    transform: translate(-6px,-6px);
+    border-radius:25px;
+}
+.lii{
+    
+    border:2px solid white;
+}

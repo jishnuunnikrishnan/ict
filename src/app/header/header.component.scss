@@ -1,0 +1,17 @@
+.navleft{
+    float: left;
+    text-align: center;
+    padding-left:400px;
+    justify-content: space-between;
+    
+}
+.navcon{
+    width:500px;
+    justify-content: space-between;
+}
+.navcon a:hover{
+    background-color:rgb(65, 235, 65);
+    transition: 0.5s;
+    border-radius: 20px;
+   
+}

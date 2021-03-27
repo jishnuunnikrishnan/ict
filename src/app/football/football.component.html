@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ict</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <label style="color: white;">SPORTS APPLICATION</label>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse navleft" id="navbarNavAltMarkup">
+                <div class="navbar-nav navcon">
+                    <a class="nav-link " aria-current="page" routerLink='/home'>Home</a>
+                    <a class="nav-link" routerLink='/cricket'>Cricket</a>
+                    <a class="nav-link" routerLink='/football'>Football</a>
+                    <a class="nav-link" routerLink='/hockey'>Hockey</a>
+                  
+                </div>
+              </div>
+            </div>
+          </nav>
+      </header>
+   <section class="bg">
+   
+       <table class="table table-dark table table-striped lii">
+        <thead>
+          <tr>
+            <th scope="col">International teams</th>
+            </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let team of crickets">
+             <td><button (click)="show(team.name)">{{team.name}}</button></td>
+          </tr>
+        </tbody>
+      </table>
+      <table class="table table-dark table table-striped lii">
+        <thead>
+          <tr>
+            <th scope="col">English Premier League</th>
+            </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let team of ipls">
+             <td><button (click)="shows(team.name)">{{team.name}}</button></td>
+          </tr>
+        </tbody>
+      </table>
+      <table class="table table-dark table table-striped lii">
+        <thead>
+          <tr>
+            <th scope="col">PLAYERS</th>
+            </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let name of players">
+             <td>{{name}}</td>
+          </tr>
+        </tbody>
+      </table>
+   
+   </section>
+   
+</body>
+</html>
